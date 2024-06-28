@@ -1,0 +1,11 @@
+{
+    "section1" : {
+        "Key" : "value",
+        "description" : "Cấu hình chung"
+    },
+
+    "MyServiceOptions": {
+        "Data1" : "Hoc DI",
+        "Data2" : "12345"
+    }
+}

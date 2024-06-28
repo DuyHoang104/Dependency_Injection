@@ -58,6 +58,9 @@ class Program
 
         // Đăng ký dịch vụ vào ServiceCollection : Singleton , Transient , Scoped
         services.AddScoped<Car,Car>();
+        //Đăng kí dịch vụ không có tham số truyền vào
+        services.AddScoped<IHorn, Horn>();
+        //Đăng kí dịch vụ với tham số truyền vào
         services.AddScoped<IHorn, MercHorn>(
             (ServiceProvider) => new MercHorn("Merc")
         );
